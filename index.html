@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblioteca Virtual – UNIASSELVI (AVA)</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- STICKY HEADER -->
+  <header>
+    <div class="logo" onclick="showPage('home')">UNI<span>ASSELVI</span></div>
+    <nav>
+      <a href="#" class="active" onclick="showPage('home', this); return false;">Home</a>
+      <a href="#" onclick="showPage('biblioteca', this); return false;">Biblioteca Virtual</a>
+      <a href="#" onclick="showPage('ferramentas', this); return false;">Ferramentas de Estudo</a>
+      <a href="#" onclick="showPage('guia', this); return false;">Guia do Estudante</a>
+    </nav>
+    <a href="https://ava2.uniasselvi.com.br/" class="btn-header">Acessar AVA</a>
+  </header>
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- PAGE: HOME                            -->
+  <!-- ══════════════════════════════════════ -->
+  <div id="page-home" class="page active">
+
+    <div class="hero">
+      <div class="hero-badge">Centro Universitário Leonardo da Vinci</div>
+      <h1>Biblioteca Virtual<br><span>UNIASSELVI (AVA)</span></h1>
+      <p>Acesso ao acervo exclusivo para alunos com materiais acadêmicos, resumos com IA e muito mais.</p>
+    </div>
+
+    <section>
+      <div class="section-title">Como <span>Acessar</span></div>
+      <div class="section-sub">Siga os passos abaixo para usar todos os recursos da biblioteca</div>
+
+      <div class="video">
+        <div style="text-align: center; margin: 20px 0;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Di3l5nxh20s?si=jKRNITeYdIA9ONg8"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="cards" style="margin-top: 50px;">
+        <div class="card">
+          <div class="card-num">1</div>
+          <h3>App Store e Google Play</h3>
+          <p>Baixe o app de leitura para iOS ou Android.</p>
+        </div>
+        <div class="card">
+          <div class="card-num">2</div>
+          <h3>Biblioteca Virtual</h3>
+          <p>Acesse o acervo exclusivo para alunos com materiais acadêmicos completos e atualizados.</p>
+        </div>
+        <div class="card">
+          <div class="card-num">3</div>
+          <h3>Notebook LM</h3>
+          <p>Use a IA para criar resumos e perguntas automáticas sobre o conteúdo lido.</p>
+        </div>
+        <div class="card">
+          <div class="card-num">4</div>
+          <h3>Guia do Estudante e YouTube</h3>
+          <p>Aprenda mais sobre o AVA com o guia completo e os vídeos do professor.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: #f7f7f7; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+      <div class="section-title">Passo a <span>Passo</span></div>
+      <div class="section-sub">Sua jornada de acesso em 4 etapas simples</div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot">1</div>
+          <div class="tl-content">
+            <h4>Baixe o app de leitura</h4>
+            <p>Disponível gratuitamente na App Store e no Google Play para Android e iOS. Após baixar o livro digital em
+              PDF no AVA, adicione o arquivo ao aplicativo para realizar a leitura ou convertê-lo em audiobook.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">2</div>
+          <div class="tl-content">
+            <h4>Acesse a Biblioteca Virtual</h4>
+            <p>Tenha acesso a um acervo exclusivo para alunos utilizando seu login institucional. Pelo AVA, você pode
+              localizar seus livros em PDF e utilizá-los junto às ferramentas de estudo disponíveis.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">3</div>
+          <div class="tl-content">
+            <h4>Use o Notebook LM</h4>
+            <p>Transforme seu material de estudo em recursos interativos. Faça o upload do livro em PDF para gerar
+              resumos, perguntas, exercícios, flashcards, podcasts e vídeos relacionados ao conteúdo.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">4</div>
+          <div class="tl-content">
+            <h4>Assista aos Vídeos do Professor Willian e baixe o Guia do Estudante</h4>
+            <p>Conte com conteúdos de apoio disponíveis 24 horas por dia. Acesse o canal no YouTube e faça o download do
+              Guia do Estudante diretamente pelas abas do cabeçalho.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: #f7f7f7; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+      <div class="section-title">Guia <span>das Abas</span></div>
+      <div class="section-sub">Cada aba possui informações específicas.</div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot">1</div>
+          <div class="tl-content">
+            <h4>Home</h4>
+            <p>Explicação resumida sobre os assuntos alocados nessa página.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">2</div>
+          <div class="tl-content">
+            <h4>Biblioteca Virtual</h4>
+            <p>Aba contém conteúdos relacionados à biblioteca do AVA.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">3</div>
+          <div class="tl-content">
+            <h4>Ferramentas de Estudo</h4>
+            <p>Recomendações de ferramentas que irão otimizar seus estudos.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">4</div>
+          <div class="tl-content">
+            <h4>Guia do Estudante</h4>
+            <p>Conteúdo relacionado ao guia do estudante e vídeos do professor Willian.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="banner">
+      <h2>Pronto para começar<br>sua jornada acadêmica?</h2>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- PAGE: BIBLIOTECA VIRTUAL              -->
+  <!-- ══════════════════════════════════════ -->
+  <div id="page-biblioteca" class="page">
+
+    <div class="page-hero">
+      <h1>Biblioteca <span>Virtual</span></h1>
+      <p>Acervo digital completo disponível 24h para todos os alunos matriculados na UNIASSELVI.</p>
+    </div>
+
+    <section>
+      <div class="section-title">O que você <span>encontra</span></div>
+      <div class="section-sub">Conteúdo acadêmico organizado por área do conhecimento</div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">📚</div>
+          <h3>Livros Digitais</h3>
+          <p>Milhares de títulos acadêmicos nas mais diversas áreas, desde exatas até humanidades.</p>
+          <span class="tag">E-books</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <h3>Material Didático</h3>
+          <p>Apostilas, cadernos de estudo e materiais complementares das disciplinas do seu curso.</p>
+          <span class="tag">Didático</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔊</div>
+          <h3>Audiobooks</h3>
+          <p>Ouça os conteúdos enquanto se desloca — compatível com o app Leo no celular.</p>
+          <span class="tag">Áudio</span>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <h4>📱 Acesso pelo App Leo</h4>
+        <p>Baixe gratuitamente na App Store ou Google Play. Faça login com seu e-mail institucional e tenha acesso
+          imediato a todo o acervo, mesmo offline após download dos títulos.</p>
+      </div>
+    </section>
+
+    <section style="background: #f7f7f7; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+      <div class="section-title">Informações de <span>Acesso</span></div>
+      <div class="section-sub">Tudo que você precisa saber para começar</div>
+      <div class="info-row">
+        <div class="info-label">Login</div>
+        <div class="info-text">Use seu login institucional (CPF e senha do AVA).</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Disponibilidade</div>
+        <div class="info-text">24 horas por dia, 7 dias por semana — acesso web e mobile.</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Suporte</div>
+        <div class="info-text">Dúvidas? Acesse a Central do Aluno ou entre em contato a secretaria academica pelo numero
+          <b>(47) 99964-9936.</b>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Vídeo <span>Tutorial</span></div>
+      <div class="section-sub">Assista ao tutorial completo do professor Willian</div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oVOmkS1r2TE?si=KCmiufRsTG3qmlaB"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p style="text-align: center; margin-top: 10px; font-size: 14px; color: #555;">Após assistir o video do professor
+        willian, acesse o <b>ambiente virtual acadêmico AVA</b> para começar seus estudos💛.</p>
+      <a href="https://www.youtube.com/@ProfessorWilliMateus" target="_blank" class="btn-youtube">Canal do professor
+        William→</a>
+    </section>
+
+    <div class="banner">
+      <h2>Acesse o acervo<br>completo agora</h2>
+      <a href="https://areasegura.uniasselvi.com.br/identificacao" target="_blank">Entrar na Biblioteca →</a>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- PAGE: FERRAMENTAS DE ESTUDO           -->
+  <!-- ══════════════════════════════════════ -->
+  <div id="page-ferramentas" class="page">
+
+    <div class="page-hero">
+      <h1>Ferramentas de <span>Estudo</span></h1>
+      <p>Recursos e tecnologias para potencializar sua aprendizagem e otimizar seu tempo de estudo.</p>
+    </div>
+
+    <section>
+      <div class="section-title">Ferramentas <span>Disponíveis</span></div>
+      <div class="section-sub">Tecnologia a favor da sua aprendizagem</div>
+      <div class="tool-grid">
+        <div class="tool-card">
+          <div class="tc-icon">🤖</div>
+          <h3>Notebook LM (Google)</h3>
+          <p>Cole o conteúdo da sua aula e peça para a IA criar resumos, flashcards, questões de revisão e explicações
+            simplificadas.</p>
+          <a href="https://notebooklm.google/" class="tc-link">Acessar Notebook LM →</a>
+        </div>
+        <div class="tool-card">
+          <div class="tc-icon">📱</div>
+          <h3>Minha biblioteca (IOS)</h3>
+          <p>Leitura de livros digitais com marcações, anotações e modo escuro. Disponível para iOS e Android, funciona
+            offline.</p>
+          <a href="https://apps.apple.com/br/app/mi-biblioteca/id1020607544" class="tc-link">Baixar o App →</a>
+        </div>
+        <div class="tool-card">
+          <div class="tc-icon">📳</div>
+          <h3>Minha Biblioteca (Android)</h3>
+          <p>Tire dúvidas com colegas e professores dentro da plataforma. Espaço colaborativo de aprendizagem ativa.</p>
+          <a href="https://play.google.com/store/apps/details?id=com.vgm.mylibrary" class="tc-link">Acessar Fórum →</a>
+        </div>
+        <div class="tool-card">
+          <div class="tc-icon">▶️</div>
+          <h3>YouTube do Professor</h3>
+          <p>Canal com videoaulas, dicas de estudo e conteúdos complementares gravados pelos professores da instituição.
+          </p>
+          <a href="https://www.youtube.com/@ProfessorWilliMateus" class="tc-link">Acessar Canal →</a>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: #f7f7f7; border-top: 0px solid #eee; border-bottom: 0px solid #eee;">
+      <div class="section-title">Dica de <span>Ouro</span></div>
+      <div class="section-sub">Como usar o Notebook LM para estudar melhor</div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot">1</div>
+          <div class="tl-content">
+            <h4>Acesse o Notebook LM</h4>
+            <p>Vá em notebooklm.google.com e faça login com sua conta Google.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">2</div>
+          <div class="tl-content">
+            <h4>Cole o conteúdo da aula</h4>
+            <p>Copie o texto do material da biblioteca ou cole o link do PDF diretamente.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">3</div>
+          <div class="tl-content">
+            <h4>Peça o que precisar</h4>
+            <p>"Crie 10 questões sobre esse conteúdo", "Faça um resumo em tópicos", "Explique de forma simples".</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">4</div>
+          <div class="tl-content">
+            <h4>Salve e revise</h4>
+            <p>Exporte o resumo gerado e use como guia de revisão antes das provas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="banner">
+      <h2>Use as ferramentas e<br>estude com mais eficiência</h2>
+      <a href="https://ava.uniasselvi.com.br">Acessar o AVA →</a>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- PAGE: GUIA DO ESTUDANTE               -->
+  <!-- ══════════════════════════════════════ -->
+  <div id="page-guia" class="page">
+
+    <div class="page-hero">
+      <h1>Guia do <span>Estudante</span></h1>
+      <p>Tudo que você precisa saber para navegar com sucesso pelo AVA e aproveitar ao máximo sua graduação.</p>
+    </div>
+
+    <section>
+      <div class="section-title">Perguntas <span>Frequentes</span></div>
+      <div class="section-sub">Dúvidas comuns respondidas de forma direta</div>
+      <div class="accordion">
+
+        <div class="acc-item">
+          <button class="acc-header" onclick="toggleAcc(this)">
+            Como faço login no AVA?
+            <span class="acc-arrow">▼</span>
+          </button>
+          <div class="acc-body">
+            <p>Acesse ava.uniasselvi.com.br e utilize seu CPF como usuário e a senha cadastrada. Em
+              caso de esquecimento, clique em "Esqueci minha senha" para recuperação por e-mail ou clique em "tentar de
+              outro jeito" e siga os passos.</p>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-header" onclick="toggleAcc(this)">
+            Como acesso a Biblioteca Virtual?
+            <span class="acc-arrow">▼</span>
+          </button>
+          <div class="acc-body">
+            <p>Dentro do AVA, clique no menu "Biblioteca". O acesso é direto com seu login institucional, sem
+              necessidade de senha adicional. Você também pode baixar o App Leo para acesso mobile.</p>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-header" onclick="toggleAcc(this)">
+            Onde encontro o material das minhas disciplinas?
+            <span class="acc-arrow">▼</span>
+          </button>
+          <div class="acc-body">
+            <p>Acesse sey AVA e clique na disciplina desejada. Os materiais (apostilas, vídeos,
+              atividades) ficam organizados por unidade dentro de cada disciplina.</p>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-header" onclick="toggleAcc(this)">
+            Como envio atividades e trabalhos?
+            <span class="acc-arrow">▼</span>
+          </button>
+          <div class="acc-body">
+            <p>Dentro da disciplina, clique na atividade correspondente e siga as instruções de envio. Fique atento aos
+              prazos — atividades fora do prazo podem não ser aceitas pelo sistema.</p>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-header" onclick="toggleAcc(this)">
+            Como funciona a prova presencial?
+            <span class="acc-arrow">▼</span>
+          </button>
+          <div class="acc-body">
+            <p>As provas presenciais ocorrem nos polos de apoio. O calendário de provas é publicado semestralmente no
+              AVA. Basta agendar a prova e vir ao polo para realizá-la.</p>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-header" onclick="toggleAcc(this)">
+            Preciso de ajuda — com quem falo?
+            <span class="acc-arrow">▼</span>
+          </button>
+          <div class="acc-body">
+            <p>Através do numero de whatsapp <b>(47) 99964-9936</b>. O atendimento funciona
+              de segunda a sexta das 8h às 22h e sábados das 9h às 13h.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section style="background: #f7f7f7; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+      <div class="section-title">Links <span>Úteis</span></div>
+      <div class="section-sub">Acesse direto os recursos mais usados</div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>AVA – Portal do Aluno</h3>
+          <p>Acesse suas disciplinas, notas e atividades.</p>
+          <a href="https://ava.uniasselvi.com.br"
+            style="margin-top: 12px; display: inline-block; color: var(--yellow);">Acessar →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">▶️</div>
+          <h3>Canal YouTube</h3>
+          <p>Videoaulas dos professores e tutoriais sobre o uso do AVA e ferramentas de estudo.</p>
+          <a href="https://www.youtube.com/@ProfessorWilliMateus"
+            style="margin-top: 12px; display: inline-block; color: var(--yellow);">Acessar →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏛️</div>
+          <h3>Guia do estudante</h3>
+          <p>Baixe o PDF com as informações sobre o Leo APP e AVA.</p>
+          <a href="pdf do github" style="margin-top: 12px; display: inline-block; color: var(--yellow);">Baixar →</a>
+        </div>
+      </div>
+            <div class="section-title">VIDEO<span>AULA</span></div>
+      <div class="section-sub">assista os videos </div>
+      <div class="video">
+        <div style="text-align: center; margin: 20px 0;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QeSlmnDyMpw?si=b0nDK75HBUE6-D7V"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </section>
+    <div class="banner">
+      <h2>Ainda com dúvidas?<br>Fale com a Central do Aluno</h2>
+      <a href="https://wa.me/message/U7STPHVPMK6HD1">Acessar Suporte →</a>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo">UNI<span>ASSELVI</span></div>
+    <p>© 2026 Centro Universitário Leonardo da Vinci. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function showPage(pageId, clickedLink) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+      document.getElementById('page-' + pageId).classList.add('active');
+      if (clickedLink) clickedLink.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleAcc(btn) {
+      const body = btn.nextElementSibling;
+      const isOpen = btn.classList.contains('open');
+      document.querySelectorAll('.acc-header.open').forEach(h => {
+        h.classList.remove('open');
+        h.nextElementSibling.classList.remove('open');
+      });
+      if (!isOpen) {
+        btn.classList.add('open');
+        body.classList.add('open');
+      }
+    }
+  </script>
+
+</body>
+
+</html>
