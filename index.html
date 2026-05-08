@@ -15,14 +15,23 @@
 
   <!-- STICKY HEADER -->
   <header>
-    <div class="logo" onclick="showPage('home')">UNI<span>ASSELVI</span></div>
-    <nav>
-      <a href="#" class="active" onclick="showPage('home', this); return false;">Home</a>
-      <a href="#" onclick="showPage('biblioteca', this); return false;">Biblioteca Virtual</a>
-      <a href="#" onclick="showPage('ferramentas', this); return false;">Ferramentas de Estudo</a>
-      <a href="#" onclick="showPage('guia', this); return false;">Guia do Estudante</a>
+    <div class="logo" onclick="showPage('home'); closeMobileMenu();">UNI<span>ASSELVI</span></div>
+
+    <nav id="main-nav">
+      <a href="#" class="active" onclick="showPage('home', this); closeMobileMenu(); return false;">Home</a>
+      <a href="#" onclick="showPage('biblioteca', this); closeMobileMenu(); return false;">Biblioteca Virtual</a>
+      <a href="#" onclick="showPage('ferramentas', this); closeMobileMenu(); return false;">Ferramentas de Estudo</a>
+      <a href="#" onclick="showPage('guia', this); closeMobileMenu(); return false;">Guia do Estudante</a>
     </nav>
-    <a href="https://ava2.uniasselvi.com.br/" class="btn-header">Acessar AVA</a>
+
+    <div class="header-right">
+      <a href="https://ava2.uniasselvi.com.br/" class="btn-header">Acessar AVA</a>
+      <button class="hamburger" id="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
 
   <!-- PAGE: HOME -->
@@ -80,32 +89,28 @@
           <div class="tl-dot">1</div>
           <div class="tl-content">
             <h4>Baixe o app de leitura</h4>
-            <p>Disponível gratuitamente na App Store e no Google Play para Android e iOS. Após baixar o livro digital em
-              PDF no AVA, adicione o arquivo ao aplicativo para realizar a leitura ou convertê-lo em audiobook.</p>
+            <p>Disponível gratuitamente na App Store e no Google Play para Android e iOS. Após baixar o livro digital em PDF no AVA, adicione o arquivo ao aplicativo para realizar a leitura ou convertê-lo em audiobook.</p>
           </div>
         </div>
         <div class="tl-item">
           <div class="tl-dot">2</div>
           <div class="tl-content">
             <h4>Acesse a Biblioteca Virtual</h4>
-            <p>Tenha acesso a um acervo exclusivo para alunos utilizando seu login institucional. Pelo AVA, você pode
-              localizar seus livros em PDF e utilizá-los junto às ferramentas de estudo disponíveis.</p>
+            <p>Tenha acesso a um acervo exclusivo para alunos utilizando seu login institucional. Pelo AVA, você pode localizar seus livros em PDF e utilizá-los junto às ferramentas de estudo disponíveis.</p>
           </div>
         </div>
         <div class="tl-item">
           <div class="tl-dot">3</div>
           <div class="tl-content">
             <h4>Use o Notebook LM</h4>
-            <p>Transforme seu material de estudo em recursos interativos. Faça o upload do livro em PDF para gerar
-              resumos, perguntas, exercícios, flashcards, podcasts e vídeos relacionados ao conteúdo.</p>
+            <p>Transforme seu material de estudo em recursos interativos. Faça o upload do livro em PDF para gerar resumos, perguntas, exercícios, flashcards, podcasts e vídeos relacionados ao conteúdo.</p>
           </div>
         </div>
         <div class="tl-item">
           <div class="tl-dot">4</div>
           <div class="tl-content">
             <h4>Assista aos Vídeos do Professor Willian e baixe o Guia do Estudante</h4>
-            <p>Conte com conteúdos de apoio disponíveis 24 horas por dia. Acesse o canal no YouTube e faça o download do
-              Guia do Estudante diretamente pelas abas do cabeçalho.</p>
+            <p>Conte com conteúdos de apoio disponíveis 24 horas por dia. Acesse o canal no YouTube e faça o download do Guia do Estudante diretamente pelas abas do cabeçalho.</p>
           </div>
         </div>
       </div>
@@ -186,8 +191,7 @@
 
       <div class="highlight-box">
         <h4>📱 Acesso pelo App Leo</h4>
-        <p>Baixe gratuitamente na App Store ou Google Play. Faça login com seu e-mail institucional e tenha acesso
-          imediato a todo o acervo, mesmo offline após download dos títulos.</p>
+        <p>Baixe gratuitamente na App Store ou Google Play. Faça login com seu e-mail institucional e tenha acesso imediato a todo o acervo, mesmo offline após download dos títulos.</p>
       </div>
     </section>
 
@@ -204,9 +208,7 @@
       </div>
       <div class="info-row">
         <div class="info-label">Suporte</div>
-        <div class="info-text">Dúvidas? Acesse a Central do Aluno ou entre em contato a secretaria academica pelo numero
-          <b>(47) 99964-9936.</b>
-        </div>
+        <div class="info-text">Dúvidas? Acesse a Central do Aluno ou entre em contato a secretaria academica pelo numero <b>(47) 99964-9936.</b></div>
       </div>
     </section>
 
@@ -222,10 +224,8 @@
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen></iframe>
       </div>
-      <p style="text-align: center; margin-top: 10px; font-size: 14px; color: #555;">Após assistir o video do professor
-        willian, acesse o <b>ambiente virtual acadêmico AVA</b> para começar seus estudos💛.</p>
-      <a href="https://www.youtube.com/@ProfessorWilliMateus" target="_blank" class="btn-youtube">Canal do professor
-        William→</a>
+      <p style="text-align: center; margin-top: 10px; font-size: 14px; color: #555;">Após assistir o video do professor willian, acesse o <b>ambiente virtual acadêmico AVA</b> para começar seus estudos💛.</p>
+      <a href="https://www.youtube.com/@ProfessorWilliMateus" target="_blank" class="btn-youtube">Canal do professor William→</a>
     </section>
 
     <div class="banner">
@@ -250,15 +250,13 @@
         <div class="tool-card">
           <div class="tc-icon">🤖</div>
           <h3>Notebook LM (Google)</h3>
-          <p>Cole o conteúdo da sua aula e peça para a IA criar resumos, flashcards, questões de revisão e explicações
-            simplificadas.</p>
+          <p>Cole o conteúdo da sua aula e peça para a IA criar resumos, flashcards, questões de revisão e explicações simplificadas.</p>
           <a href="https://notebooklm.google/" class="tc-link">Acessar Notebook LM →</a>
         </div>
         <div class="tool-card">
           <div class="tc-icon">📱</div>
           <h3>Minha biblioteca (IOS)</h3>
-          <p>Leitura de livros digitais com marcações, anotações e modo escuro. Disponível para iOS e Android, funciona
-            offline.</p>
+          <p>Leitura de livros digitais com marcações, anotações e modo escuro. Disponível para iOS e Android, funciona offline.</p>
           <a href="https://apps.apple.com/br/app/mi-biblioteca/id1020607544" class="tc-link">Baixar o App →</a>
         </div>
         <div class="tool-card">
@@ -270,14 +268,13 @@
         <div class="tool-card">
           <div class="tc-icon">▶️</div>
           <h3>YouTube do Professor</h3>
-          <p>Canal com videoaulas, dicas de estudo e conteúdos complementares gravados pelos professores da instituição.
-          </p>
+          <p>Canal com videoaulas, dicas de estudo e conteúdos complementares gravados pelos professores da instituição.</p>
           <a href="https://www.youtube.com/@ProfessorWilliMateus" class="tc-link">Acessar Canal →</a>
         </div>
       </div>
     </section>
 
-    <section style="background: #f7f7f7; border-top: 0px solid #eee; border-bottom: 0px solid #eee;">
+    <section style="background: #f7f7f7;">
       <div class="section-title">Dica de <span>Ouro</span></div>
       <div class="section-sub">Como usar o Notebook LM para estudar melhor</div>
       <div class="timeline">
@@ -338,9 +335,7 @@
             <span class="acc-arrow">▼</span>
           </button>
           <div class="acc-body">
-            <p>Acesse ava.uniasselvi.com.br e utilize seu CPF como usuário e a senha cadastrada. Em
-              caso de esquecimento, clique em "Esqueci minha senha" para recuperação por e-mail ou clique em "tentar de
-              outro jeito" e siga os passos.</p>
+            <p>Acesse ava.uniasselvi.com.br e utilize seu CPF como usuário e a senha cadastrada. Em caso de esquecimento, clique em "Esqueci minha senha" para recuperação por e-mail ou clique em "tentar de outro jeito" e siga os passos.</p>
           </div>
         </div>
 
@@ -350,8 +345,7 @@
             <span class="acc-arrow">▼</span>
           </button>
           <div class="acc-body">
-            <p>Dentro do AVA, clique no menu "Biblioteca". O acesso é direto com seu login institucional, sem
-              necessidade de senha adicional. Você também pode baixar o App Leo para acesso mobile.</p>
+            <p>Dentro do AVA, clique no menu "Biblioteca". O acesso é direto com seu login institucional, sem necessidade de senha adicional. Você também pode baixar o App Leo para acesso mobile.</p>
           </div>
         </div>
 
@@ -361,8 +355,7 @@
             <span class="acc-arrow">▼</span>
           </button>
           <div class="acc-body">
-            <p>Acesse seu AVA e clique na disciplina desejada. Os materiais (apostilas, vídeos,
-              atividades) ficam organizados por unidade dentro de cada disciplina.</p>
+            <p>Acesse seu AVA e clique na disciplina desejada. Os materiais (apostilas, vídeos, atividades) ficam organizados por unidade dentro de cada disciplina.</p>
           </div>
         </div>
 
@@ -372,8 +365,7 @@
             <span class="acc-arrow">▼</span>
           </button>
           <div class="acc-body">
-            <p>Dentro da disciplina, clique na atividade correspondente e siga as instruções de envio. Fique atento aos
-              prazos — atividades fora do prazo podem não ser aceitas pelo sistema.</p>
+            <p>Dentro da disciplina, clique na atividade correspondente e siga as instruções de envio. Fique atento aos prazos — atividades fora do prazo podem não ser aceitas pelo sistema.</p>
           </div>
         </div>
 
@@ -383,8 +375,7 @@
             <span class="acc-arrow">▼</span>
           </button>
           <div class="acc-body">
-            <p>As provas presenciais ocorrem nos polos de apoio. O calendário de provas é publicado semestralmente no
-              AVA. Basta agendar a prova e vir ao polo para realizá-la.</p>
+            <p>As provas presenciais ocorrem nos polos de apoio. O calendário de provas é publicado semestralmente no AVA. Basta agendar a prova e vir ao polo para realizá-la.</p>
           </div>
         </div>
 
@@ -394,8 +385,7 @@
             <span class="acc-arrow">▼</span>
           </button>
           <div class="acc-body">
-            <p>Através do numero de whatsapp <b>(47) 99964-9936</b>. O atendimento funciona
-              de segunda a sexta das 8h às 22h e sábados das 9h às 13h.</p>
+            <p>Através do numero de whatsapp <b>(47) 99964-9936</b>. O atendimento funciona de segunda a sexta das 8h às 22h e sábados das 9h às 13h.</p>
           </div>
         </div>
 
@@ -430,7 +420,6 @@
         </div>
       </div>
 
-      <!-- VÍDEOS SEPARADOS EM CARDS -->
       <div class="video-block-wrapper">
 
         <div class="video-block">
@@ -515,8 +504,21 @@
         body.classList.add('open');
       }
     }
+
+    function toggleMobileMenu() {
+      const nav = document.getElementById('main-nav');
+      const btn = document.getElementById('hamburger-btn');
+      nav.classList.toggle('mobile-open');
+      btn.classList.toggle('active');
+    }
+
+    function closeMobileMenu() {
+      const nav = document.getElementById('main-nav');
+      const btn = document.getElementById('hamburger-btn');
+      nav.classList.remove('mobile-open');
+      btn.classList.remove('active');
+    }
   </script>
 
 </body>
-
 </html>
