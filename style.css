@@ -656,20 +656,21 @@
 .video-block-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  margin-top: 32px;
+  gap: 32px;
+  margin-top: 48px;
 }
 
 .video-block {
-  background: #fff;
+  background: #ffffff;
   border-radius: 10px;
   border: 1px solid #e0e0e0;
   padding: 28px 28px 24px;
+  border-left: 4px solid var(--yellow);
 }
 
 .vid-label {
   display: inline-block;
-  background: #FFD600;
+  background: var(--yellow);
   color: #282828;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
@@ -678,9 +679,8 @@
   text-transform: uppercase;
   padding: 3px 12px;
   border-radius: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
-
 .video-block .section-sub {
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 14px;
